@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Logo.ico">
+    <title>AricanVOS</title>
+    <style>
+        body{
+            background-image: url(assets/Background.jpg);
+        }     
+        a{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 30px;
+            padding: 10px 30px;
+            margin: 30px;
+        }
+        p{
+            font-family: 'Segoe UI';
+            font-size: 30px;
+        }
+        html{
+            cursor:url(assets/cursor.ico),auto;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <br><br><br><br><br><br>
+        <img src="assets/Logo.png" width="250" height="250"> <p>AricanVOS</p>
+        <img src="assets/loadingtransparent.gif" width="150" height="110" id="loading">
+        <br>
+        <a onclick="LoginAnimation()" id="loginbutton">Login</a>
+    </center>
+    <script>loading.style.display = "none";</script>
+    <script src="js/login.js"></script>
+</body>
+</html>

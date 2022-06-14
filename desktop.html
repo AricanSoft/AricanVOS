@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Logo.ico">
+    <title>AricanVOS</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url(assets/Background.jpg);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #logoff{
+            background-color: lime;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 10px;
+            
+        }
+
+        #restart{
+            background-color: yellow;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 10px;
+            
+        }
+
+        #turnoff{
+            background-color: red;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        html, #restart, #turnoff, .appicon, #sufisite{
+            cursor:url(assets/cursor.ico),auto;
+        }
+
+        .DesktopAppNames{
+            font-size: 16px;
+        }
+
+        .App1{
+            display: none;
+            font-family: 'Segoe UI';
+            font-size: 17px;
+        }
+        
+        .StartText{
+            font-size: 25px;
+        }
+
+        #ExitButton{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 30px;
+            padding: 10px 30px;
+            margin: 30px;
+        }
+
+        #startmenu{
+            display: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            bottom: 0;
+            width: 30%;
+            height: 66%;
+            position: fixed;
+        }
+
+        #startmenuappnames{
+            color:aliceblue;
+            font-family: 'Segoe UI';
+            font-size: 16px;
+        }
+
+        #sufisite{
+            height: 500px;
+            width: 100%;
+        }
+
+        .Text{
+            font-family: Segoe UI;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body id="body">
+    <!--Masaüstündeki uygulamaların simgeleri-->
+    <div id="div1">
+        <br>
+        <a onclick="computer()" class="appicon">
+        <img src="assets/computer.png" width="90" height="75"></a>
+        <a onclick="settings()" class="appicon">
+        <img src="assets/settings.png" width="90" height="75"></a>
+        <a onclick="sufi()" class="appicon">
+        <img src="assets/sufi.png" width="90" height="75"></a>
+        <a onclick="aricanstore()" class="appicon">
+        <img src="assets/aricanstore.png" width="80" height="75"></a>
+        <a href="https://github.com/AricanSoft/AricanVOS" class="appicon">
+        <img src="assets/github.png" width="80" height="75"></a> 
+    </div>
+
+
+    <!--Masaüstündeki uygulamaların adları-->
+    <div class="DesktopAppNames" id="div2">
+        <pre class="Text"> Computer         Settings             Sufi          Arican Store     GitHub</pre>
+    </div>
+
+
+    <!--Computer uygulaması ekranı-->
+    <div class="App1" id="App1">
+        <br>
+        <pre>  CPU: ZAND RİTEN 6 5700X</pre>
+        <pre>  GPU: MBDIA BeeForce ZTX 6080 Tİ</pre>
+        <pre>  OS: AricanVOS Alpha V 0.1</pre>
+        <pre>  Memory: 8192 MegaByte(s)</pre>
+        <pre>  Free Space: 1,78 PetaByte(s)</pre>
+        <br>
+        <br>
+        <br>
+        <a id="ExitButton"; onclick="computerExit()";>Exit</a>
+    </div>
+
+    <!--Settings uygulaması ekranı-->
+    <div class="App2" id="App2">
+        <p class="StartText">COMİNG SOON</ğ>
+        <br><br><br><br><br>
+        <a id="ExitButton"; onclick="settingsExit()";>Exit</a>
+    </div>
+
+
+    <!--Sufi uygulaması ekranı-->
+    <div class="App3" id="App3">
+        <iframe id=sufisite src="https://www.google.com/webhp?igu=1"></iframe>
+        <a id="ExitButton"; onclick="sufiExit()";>Exit</a>
+    </div>
+
+
+    <!--Arican Store uygulaması ekranı-->
+    <div class="App4" id="App4">
+        <pre class="StartText">  COMİNG SOON!</pre>
+        <br><br><br><br><br>
+        <a id="ExitButton"; onclick="aricanstoreExit()";>Exit</a>
+    </div>
+
+
+    <!--Görev çubuğu-->
+    <ul>
+        <a onclick="startmenu()"><img src="assets/Logo.png" width="65" height="55"></a>
+    </ul>
+
+
+    <!--Başlat menüsü-->
+    <div id="startmenu">
+        <a onclick="startmenuExit()"><img src="assets/Logo.png" width="85" height="75"></a>
+        <br><br>
+        <a onclick="computer()" class="appicon">
+        <img src="assets/computer.png" width="90" height="75"></a>
+        <a onclick="settings()" class="appicon">
+        <img src="assets/settingslight.png" width="90" height="75"></a>
+        <a onclick="sufi()" class="appicon">
+        <img src="assets/sufi.png" width="90" height="75"></a>
+        <a onclick="aricanstore()" class="appicon">
+        <img src="assets/aricanstore.png" width="80" height="75"></a>
+        <pre id="startmenuappnames">  Computer       Settings           Sufi         Arican Store</pre>
+        <br><br><br><br><br><br><br><br><br>
+        <a id="logoff" href="logoff.html">Log off</a>
+        <a id="restart" href="restart.html">Restart</a>
+        <a id="turnoff" href="turningoff.html">Turn off</a>
+    </div>
+
+
+    <script>document.getElementById('App4').style.display = 'none'</script>
+    <script>document.getElementById('App3').style.display = 'none'</script>
+    <script>document.getElementById('App2').style.display = 'none'</script>
+    <script>document.getElementById('App1').style.display = 'none'</script>
+    <script src="js/desktop.js"></script>
+</body>
+</html>
