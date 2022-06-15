@@ -55,7 +55,7 @@
             margin: 10px;
         }
 
-        html, #restart, #turnoff, .appicon, #sufisite{
+        html,#logoff , #restart, #turnoff, .appicon, #sufisite, .storeappicon{
             cursor:url(assets/cursor.ico),auto;
         }
 
@@ -78,9 +78,9 @@
             color: black;
             text-decoration: none;
             font-family: Segoe UI;
-            font-size: 30px;
+            font-size: 15px;
             padding: 10px 30px;
-            margin: 30px;
+            margin: 20px;
         }
 
         #startmenu{
@@ -111,9 +111,43 @@
             font-family: Segoe UI;
             font-size: 15px;
         }
+
+        #NoJS{
+            font-family: Segoe UI;
+            font-size: 70px;
+        }
+
+        #Installbutton{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 15px;
+            padding: 10px 30px;
+            margin: 20px;
+        }
+
+        #App5{
+            width: 600px;
+            height: 500px;
+            background-color: white;
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -300px;
+            margin-top: -250px;
+        }
     </style>
 </head>
 <body id="body">
+    <!--JavaScript kapalı olduğunda çıkacak diyalog-->
+    <div id="NoJS">
+        <br><br>
+        <noscript>This site using JavaScript, please enable JavaScript on browser settings.</noscript>
+        <br><br><br>
+    </div>
+
+
     <!--Masaüstündeki uygulamaların simgeleri-->
     <div id="div1">
         <br>
@@ -132,16 +166,28 @@
 
     <!--Masaüstündeki uygulamaların adları-->
     <div class="DesktopAppNames" id="div2">
-        <pre class="Text"> Computer         Settings             Sufi          Arican Store     GitHub</pre>
+        <pre class="Text"> Computer         Settings             Sufi          Arican Store     GitHub</pre>  
+    </div>
+
+    
+    <!--Masaüstündeki market uygulamalarının simgeleri-->
+    <div id="div3">
+        <a onclick="calculatepi()"><img src="assets/calculatepi.png" width="80" height="75"></a>
+    </div>
+
+
+    <!--Masaüstündeki market uygulamalarının adlar-->
+    <div id="div4">
+        <pre class="Text"> Calculate pi</pre>
     </div>
 
 
     <!--Computer uygulaması ekranı-->
     <div class="App1" id="App1">
         <br>
-        <pre>  CPU: ZAND RİTEN 6 5700X</pre>
+        <pre>  CPU: ZAND RITEN 6 5700X</pre>
         <pre>  GPU: MBDIA BeeForce ZTX 6080 Tİ</pre>
-        <pre>  OS: AricanVOS Alpha V 0.1</pre>
+        <pre>  OS: AricanVOS Beta V 0.1.1</pre>
         <pre>  Memory: 8192 MegaByte(s)</pre>
         <pre>  Free Space: 1,78 PetaByte(s)</pre>
         <br>
@@ -152,7 +198,7 @@
 
     <!--Settings uygulaması ekranı-->
     <div class="App2" id="App2">
-        <p class="StartText">COMİNG SOON</ğ>
+        <p class="StartText">COMING SOON!</p>
         <br><br><br><br><br>
         <a id="ExitButton"; onclick="settingsExit()";>Exit</a>
     </div>
@@ -167,9 +213,32 @@
 
     <!--Arican Store uygulaması ekranı-->
     <div class="App4" id="App4">
-        <pre class="StartText">  COMİNG SOON!</pre>
+        <br>
+        <img src="assets/calculatepi.png" width="90" height="70">
+        <br>
+        <p class="Text">Calculate pi</p>
+        <a id="Installbutton" onclick="installcalculatepi()">İnstall</a>
         <br><br><br><br><br>
         <a id="ExitButton"; onclick="aricanstoreExit()";>Exit</a>
+    </div>
+
+
+    <!--Calculate pi uygulaması ekranı-->
+    <div class="App5" id="App5">
+        <audio id="ses_id">
+            <source src="assets/errorsound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Calculate_pi_v0.1.exe</p>
+        <hr>
+        <p>Your processor and RAM do not meet the minimum system requirements.</p>
+        <br>
+        <pre>                Your PC                          Minimum system requirements</pre>
+        <hr>
+        <pre>Processor: ZAMD Riten 6 5700X              Zintel i11 18900K or ZAMD Riten 10 6900X</pre>
+        <pre>RAM:        8192 MegaByte(s)                        1024 GigaByte(s)</pre>
+        <br><br>
+        <a id="ExitButton" onclick="calculatepiExit()">Exit and delete</a>
     </div>
 
 
@@ -199,10 +268,16 @@
     </div>
 
 
-    <script>document.getElementById('App4').style.display = 'none'</script>
-    <script>document.getElementById('App3').style.display = 'none'</script>
-    <script>document.getElementById('App2').style.display = 'none'</script>
-    <script>document.getElementById('App1').style.display = 'none'</script>
+    <script>document.getElementById('storeappicon').style.display = 'none'</script>
+    <script>document.getElementById('appnameslist2').style.display = 'none'</script>
+    <script>document.getElementById('NoJS').style.display = 'none'</script>
+    <script>document.getElementById('div4').style.display = 'none'</script> 
+    <script>document.getElementById('div3').style.display = 'none'</script>
+    <script>document.getElementById('App5').style.display = 'none'</script> 
+    <script>document.getElementById('App4').style.display = 'none'</script> 
+    <script>document.getElementById('App3').style.display = 'none'</script> 
+    <script>document.getElementById('App2').style.display = 'none'</script> 
+    <script>document.getElementById('App1').style.display = 'none'</script>  
     <script src="js/desktop.js"></script>
 </body>
 </html>
