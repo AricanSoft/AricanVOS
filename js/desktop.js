@@ -1,6 +1,8 @@
 function computer(){
     document.getElementById('div1').style.display = 'none'
     document.getElementById('div2').style.display = 'none'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('startmenu').style.display = 'none'
     document.getElementById('App1').style.display = 'block'
     document.getElementById('App2').style.display = 'none'
@@ -12,6 +14,8 @@ function computer(){
 function computerExit(){
     document.getElementById('div1').style.display = 'block'
     document.getElementById('div2').style.display = 'block'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('App1').style.display = 'none'
     document.body.style.backgroundImage = "url('assets/Background.jpg')";
 }
@@ -19,6 +23,8 @@ function computerExit(){
 function settings(){
     document.getElementById('div1').style.display = 'none'
     document.getElementById('div2').style.display = 'none'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('startmenu').style.display = 'none'
     document.getElementById('App1').style.display = 'none'
     document.getElementById('App2').style.display = 'block'
@@ -30,6 +36,8 @@ function settings(){
 function settingsExit(){
     document.getElementById('div1').style.display = 'block'
     document.getElementById('div2').style.display = 'block'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('App2').style.display = 'none'
     document.body.style.backgroundImage = 'url(assets/Background.jpg)';
 }
@@ -37,6 +45,8 @@ function settingsExit(){
 function sufi(){
     document.getElementById('div1').style.display = 'none'
     document.getElementById('div2').style.display = 'none'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('startmenu').style.display = 'none'
     document.getElementById('App1').style.display = 'none'
     document.getElementById('App2').style.display = 'none'
@@ -48,6 +58,8 @@ function sufi(){
 function sufiExit(){
     document.getElementById('div1').style.display = 'block'
     document.getElementById('div2').style.display = 'block'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('App3').style.display = 'none'
     document.body.style.backgroundImage = "url('assets/Background.jpg')";
 }
@@ -55,6 +67,8 @@ function sufiExit(){
 function aricanstore(){
     document.getElementById('div1').style.display = 'none'
     document.getElementById('div2').style.display = 'none'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
     document.getElementById('startmenu').style.display = 'none'
     document.getElementById('App1').style.display = 'none'
     document.getElementById('App2').style.display = 'none'
@@ -76,4 +90,33 @@ function startmenu(){
 
 function startmenuExit(){
     document.getElementById('startmenu').style.display = 'none'
+}
+
+function installcalculatepi(){
+    document.getElementById('div1').style.display = 'block'
+    document.getElementById('div2').style.display = 'block'
+    document.getElementById('div3').style.display = 'block'
+    document.getElementById('div4').style.display = 'block'
+    document.getElementById('App4').style.display = 'none'
+    document.body.style.backgroundImage = "url('assets/Background.jpg')";
+}
+
+function calculatepi(){
+    var errorsound = new Audio('assets/errorsound.mp3')  
+    errorsound.play();
+    document.getElementById('startmenu').style.display = 'none'
+    document.getElementById('App1').style.display = 'none'
+    document.getElementById('App2').style.display = 'none'
+    document.getElementById('App3').style.display = 'none'
+    document.getElementById('App4').style.display = 'none'
+    document.getElementById('App5').style.display = 'block'
+}
+
+function calculatepiExit(){
+    document.getElementById('div1').style.display = 'block'
+    document.getElementById('div2').style.display = 'block'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
+    document.getElementById('App5').style.display = 'none'
+    document.body.style.backgroundImage = "url('assets/Background.jpg')";
 }
