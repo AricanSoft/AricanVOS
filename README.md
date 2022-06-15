@@ -5,5 +5,7 @@ AricanVOS is a virtual operating system, definitely **NOT** a real operating sys
 **New features coming in v0.1.1**
 
 Added calculate pi
+
 Added Arican Store
+
 Fixed some typos
