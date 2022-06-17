@@ -133,6 +133,15 @@ function feth(){
     document.getElementById('App6').style.display = 'block'
 }
 
+function fethExit(){
+    document.getElementById('div1').style.display = 'block'
+    document.getElementById('div2').style.display = 'block'
+    document.getElementById('div3').style.display = 'none'
+    document.getElementById('div4').style.display = 'none'
+    document.getElementById('App6').style.display = 'none'
+    document.body.style.backgroundImage = "url('assets/Background.jpg')";
+}
+
 function scan(){
     document.getElementById('scanbutton').style.display = 'none'
     document.getElementById('loading').style.display = 'block'
