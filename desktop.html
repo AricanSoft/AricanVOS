@@ -112,6 +112,11 @@
             font-size: 15px;
         }
 
+        .Text2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
         #NoJS{
             font-family: Segoe UI;
             font-size: 70px;
@@ -137,6 +142,33 @@
             margin-left: -300px;
             margin-top: -250px;
         }
+
+        #App6{
+            width: 600px;
+            height: 500px;
+            background-color: limegreen;
+            position:absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -300px;
+            margin-top: -250px;
+        }
+
+        #scanbutton{
+            position:absolute;
+            left: 50%;
+            top: 70%;
+            margin-left: -178px;
+            margin-top: -300px;
+        }
+
+        #loading{
+            position:absolute;
+            left: 50%;
+            top: 110%;
+            margin-left: -178px;
+            margin-top: -300px;
+        }
     </style>
 </head>
 <body id="body">
@@ -160,13 +192,15 @@
         <a onclick="aricanstore()" class="appicon">
         <img src="assets/aricanstore.png" width="80" height="75"></a>
         <a href="https://github.com/AricanSoft/AricanVOS" class="appicon">
-        <img src="assets/github.png" width="80" height="75"></a> 
+        <img src="assets/github.png" width="80" height="75"></a>
+        <a onclick="feth()" class="appicon">
+        <img src="assets/feth.png" width="80" height="75"></a>
     </div>
 
 
     <!--Masaüstündeki uygulamaların adları-->
     <div class="DesktopAppNames" id="div2">
-        <pre class="Text"> Computer         Settings             Sufi          Arican Store     GitHub</pre>  
+        <pre class="Text"> Computer         Settings             Sufi          Arican Store     GitHub    Feth Anti-Virus</pre>  
     </div>
 
     
@@ -185,7 +219,7 @@
     <!--Computer uygulaması ekranı-->
     <div class="App1" id="App1">
         <br>
-        <pre>  CPU: ZAND RITEN 6 5700X</pre>
+        <pre>  CPU: ZAND Riten 6 5700X</pre>
         <pre>  GPU: MBDIA BeeForce ZTX 6080 Tİ</pre>
         <pre>  OS: AricanVOS Beta V 0.1.1</pre>
         <pre>  Memory: 8192 MegaByte(s)</pre>
@@ -229,16 +263,29 @@
             <source src="assets/errorsound.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <p>Calculate_pi_v0.1.exe</p>
+        <p class="Text">Calculate_pi_v0.1.exe</p>
         <hr>
-        <p>Your processor and RAM do not meet the minimum system requirements.</p>
+        <p class="Text">Your processor and RAM do not meet the minimum system requirements.</p>
         <br>
-        <pre>                Your PC                          Minimum system requirements</pre>
+        <pre class="Text">                Your PC                          Minimum system requirements</pre>
         <hr>
-        <pre>Processor: ZAMD Riten 6 5700X              Zintel i11 18900K or ZAMD Riten 10 6900X</pre>
-        <pre>RAM:        8192 MegaByte(s)                        1024 GigaByte(s)</pre>
+        <pre class="Text">Processor: ZAMD Riten 6 5700X              Zintel i11 18900K or ZAMD Riten 10 6900X</pre>
+        <pre class="Text">RAM:        8192 MegaByte(s)                        1024 GigaByte(s)</pre>
         <br><br>
         <a id="ExitButton" onclick="calculatepiExit()">Exit and delete</a>
+        <p>Restart required</p>
+    </div>
+
+
+    <!--Feth uygulaması ekranı-->
+    <div class="App6" id="App6">
+        <p class="Text2">Feth Anti-Virus</p>
+        <hr>
+        <br>
+        <a onclick="scan()" id="scanbutton">
+        <img src="assets/scanbutton.gif"></a>
+        <img id=loading src="assets/loadingtransparent.gif" width="350" height="256">
+        <div id="virustext"></div>
     </div>
 
 
@@ -268,11 +315,10 @@
     </div>
 
 
-    <script>document.getElementById('storeappicon').style.display = 'none'</script>
-    <script>document.getElementById('appnameslist2').style.display = 'none'</script>
     <script>document.getElementById('NoJS').style.display = 'none'</script>
     <script>document.getElementById('div4').style.display = 'none'</script> 
     <script>document.getElementById('div3').style.display = 'none'</script>
+    <script>document.getElementById('App6').style.display = 'none'</script> 
     <script>document.getElementById('App5').style.display = 'none'</script> 
     <script>document.getElementById('App4').style.display = 'none'</script> 
     <script>document.getElementById('App3').style.display = 'none'</script> 
