@@ -120,3 +120,34 @@ function calculatepiExit(){
     document.getElementById('App5').style.display = 'none'
     document.body.style.backgroundImage = "url('assets/Background.jpg')";
 }
+
+function feth(){
+    document.getElementById('virustext').style.display = 'none'
+    document.getElementById('loading').style.display = 'none'
+    document.getElementById('startmenu').style.display = 'none'
+    document.getElementById('App1').style.display = 'none'
+    document.getElementById('App2').style.display = 'none'
+    document.getElementById('App3').style.display = 'none'
+    document.getElementById('App4').style.display = 'none'
+    document.getElementById('App5').style.display = 'none'
+    document.getElementById('App6').style.display = 'block'
+}
+
+function scan(){
+    document.getElementById('scanbutton').style.display = 'none'
+    document.getElementById('loading').style.display = 'block'
+    setTimeout(scanned, 10000);
+}
+
+function scanned(){
+    document.getElementById('virustext').style.display = 'block'
+    document.getElementById('loading').style.display = 'none'
+    document.getElementById('scanbutton').style.display = 'block'
+    setTimeout(result)
+}
+
+function result() {
+    var results = ['No virus found', '365 viruses were found and Feth nuked them. Please get a new hard drive and restart the computer.', '2 viruses found. Please format your computer or buy the Pro ++++++ version of Feth.'];
+    var randomresults = Math.floor(Math.random() * results.length);
+    document.getElementById('virustext').innerHTML = results[randomresults];
+    };
