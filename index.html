@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js"></script>
+    <script>
+        shortcut.add("Space", function() {window.location = "bios.html"})
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +15,9 @@
         html{
             cursor:none;
         }
+        #biostext{
+            text-align:right;
+        }
     </style>
 </head>
 <body bgcolor="white">
@@ -20,5 +27,7 @@
         <br>
         <img src="assets/loading.gif" width="150" height="110">
     </center>
+    <br><br>
+    <p id="biostext">Press <strong>"Space"</strong> to enter BIOS Setup Utility</p>
 </body>
 </html>
