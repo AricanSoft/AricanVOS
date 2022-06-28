@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js"></script>
-    <script>
-        shortcut.add("Space", function() {window.location = "index.html"})
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +27,12 @@
             color: yellow;
             font-size: 15px;
         }
+
+        #biosbutton{
+            color: yellow;
+            text-decoration: none;
+            cursor:url(assets/cursor.ico),auto;
+        }
     </style>
 </head>
 <body>
@@ -43,6 +45,6 @@
     <pre class="biostext">  2: SATA: Beegate Barracuda ST2097152DM009</pre>
     <pre class="biostext">  3:  USB: QanDisk Ultra 128 GB</pre>
     <br>
-    <pre class="biostext">  Press <strong>"Space"</strong> to exit AricanVOS BIOS Setup Utility</pre>
+    <a id="biosbutton" href="index.html">You can exit the BIOS Setup Utility by pressing this text.</a>
 </body>
 </html>
