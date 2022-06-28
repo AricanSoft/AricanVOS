@@ -134,12 +134,15 @@ function feth(){
 }
 
 function fethExit(){
-    document.getElementById('div1').style.display = 'block'
-    document.getElementById('div2').style.display = 'block'
-    document.getElementById('div3').style.display = 'none'
-    document.getElementById('div4').style.display = 'none'
+    document.getElementById('virustext').style.display = 'none'
+    document.getElementById('loading').style.display = 'none'
+    document.getElementById('startmenu').style.display = 'none'
+    document.getElementById('App1').style.display = 'none'
+    document.getElementById('App2').style.display = 'none'
+    document.getElementById('App3').style.display = 'none'
+    document.getElementById('App4').style.display = 'none'
+    document.getElementById('App5').style.display = 'none'
     document.getElementById('App6').style.display = 'none'
-    document.body.style.backgroundImage = "url('assets/Background.jpg')";
 }
 
 function scan(){
