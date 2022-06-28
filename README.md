@@ -6,6 +6,8 @@ AricanVOS is a virtual operating system, definitely **NOT** a real operating sys
 
 Added upgrade to AricanVOS 2
 
+The BIOS is no longer entered/exited by pressing the button, but by clicking the button.
+
 Added image instead of text to shutdown, restart, exit buttons
 
 Feth anti-virus unable to exit bug fixed
