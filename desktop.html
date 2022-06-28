@@ -24,35 +24,18 @@
         }
 
         #logoff{
-            background-color: lime;
-            color: black;
-            text-decoration: none;
-            font-family: Segoe UI;
-            font-size: 15px;
-            padding: 10px 20px;
-            margin: 10px;
-            
+            position: absolute;
+            left: 10px;
         }
 
         #restart{
-            background-color: yellow;
-            color: black;
-            text-decoration: none;
-            font-family: Segoe UI;
-            font-size: 15px;
-            padding: 10px 20px;
-            margin: 10px;
-            
+            position: absolute;
+            left: 55px;
         }
 
         #turnoff{
-            background-color: red;
-            color: black;
-            text-decoration: none;
-            font-family: Segoe UI;
-            font-size: 15px;
-            padding: 10px 20px;
-            margin: 10px;
+            position: absolute;
+            left: 100px;
         }
 
         html,#logoff , #restart, #turnoff, .appicon, #sufisite, .storeappicon{
@@ -120,6 +103,16 @@
         #NoJS{
             font-family: Segoe UI;
             font-size: 70px;
+        }
+
+        #upgradebutton{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 15px;
+            padding: 10px 30px;
+            margin: 20px;
         }
 
         #Installbutton{
@@ -221,7 +214,7 @@
         <br>
         <pre>  CPU: ZAND Riten 6 5700X</pre>
         <pre>  GPU: MBDIA BeeForce ZTX 6080 Tİ</pre>
-        <pre>  OS: AricanVOS Beta V 0.2</pre>
+        <pre>  OS: AricanVOS Beta V 0.2.1</pre>
         <pre>  Memory: 8192 MegaByte(s)</pre>
         <pre>  Free Space: 1,78 PetaByte(s)</pre>
         <br>
@@ -232,7 +225,9 @@
 
     <!--Settings uygulaması ekranı-->
     <div class="App2" id="App2">
-        <p class="StartText">COMING SOON!</p>
+        <img src="assets/AVOS2.png" width="180" height="160">
+        <p class="Text">Upgrade to AricanVOS 2 for free.</p>
+        <a id="upgradebutton" href="turnoff(upgrade).html">Upgrade</a>
         <br><br><br><br><br>
         <a id="ExitButton"; onclick="settingsExit()";>Exit</a>
     </div>
@@ -286,7 +281,8 @@
         <img src="assets/scanbutton.gif"></a>
         <img id=loading src="assets/loadingtransparent.gif" width="350" height="256">
         <div id="virustext"></div>
-        <a id="ExitButton"; onclick="fethExit()">Exit</a>
+        <br>
+        <a onclick="fethExit()" id="ExitButton">Exit the app</a>
     </div>
 
 
@@ -309,10 +305,10 @@
         <a onclick="aricanstore()" class="appicon">
         <img src="assets/aricanstore.png" width="80" height="75"></a>
         <pre id="startmenuappnames">  Computer       Settings           Sufi         Arican Store</pre>
-        <br><br><br><br><br><br><br><br><br>
-        <a id="logoff" href="logoff.html">Log off</a>
-        <a id="restart" href="restart.html">Restart</a>
-        <a id="turnoff" href="turningoff.html">Turn off</a>
+        <br><br><br><br><br><br><br><br>
+        <a id="logoff" href="logoff.html"><img src="assets/logoff.png" width="30" height="40"></a>
+        <a id="restart" href="restart.html"><img src="assets/restart.png" width="30" height="40"></a>
+        <a id="turnoff" href="turningoff.html"><img src="assets/turnoff.png" width="35" height="40"></a>
     </div>
 
 
